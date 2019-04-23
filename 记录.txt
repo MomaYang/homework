@@ -1,0 +1,64 @@
+命令符	Powershell     https://github.com/PowerShell/PowerShell/releases
+pwd     获取当前文件的全路径
+cd      更改当前路径
+cd ..   返回到父级目录
+ls      查看当前目录下所有信息
+ls -a   查看当前目录下所有信息（包含隐藏信息）
+ls -l   查看当前目录下所有信息，体现信息更完整些
+ls -al  查看当前目录下所有信息(包含隐藏信息，体现信息更完整些）
+clear   清除
+open    打开某文件
+mkdir   创建一个文件夹
+touch   创建一个文件，txt,js.html... (touch 是linux 下的命令，window下用ni或New-Item)
+
+
+mv      有俩种意思一重命名，二是移动 
+        如mv c.txt a.txt 重命名         mv a.txt ../ 移动到上一级
+
+rm      删除文件
+rmdir   删除文件夹必须为空
+rm -r   删除文件夹
+rm -rf   删除文件夹，强行删除，没权限删除的文件也照常删除
+
+man     查看任何命令里面对应的后缀详细介绍
+
+
+dir	打开当前目录
+cls	清除
+
+
+
+
+
+
+git  http://git-scm.com/download/win
+
+1.git init     初始化本地git仓库
+配置
+git config --global user.name  “”
+git config --global user.email 798336856@qq.com
+
+2.git add <file>  添加文件
+3.git status         查看状态
+4.git commit         提交
+5.git push           推送到仓库
+6.git pull           从远程仓库拉取数据
+7.git clone          从远程仓库拷贝数据
+
+
+.gitignore    忽略文件与文件夹
+git branch name   创建分支
+git checkout name  切换分支
+
+git checkout master  主分支  master 
+
+git merge name 主分支和分支合并，前提是切换到主分支下操作
+
+
+git clone http://github.com...   拷贝仓库里的项目
+
+git remote      查看当前没有仓库地址
+
+
+
+github    https://desktop.github.com
