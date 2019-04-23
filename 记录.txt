@@ -33,32 +33,47 @@ cls	清除
 
 git  http://git-scm.com/download/win
 
-1.git init     初始化本地git仓库
-配置
-git config --global user.name  “”
-git config --global user.email 798336856@qq.com
+1.git init     初始化本地git仓库，在本地创建一个空的git仓库
+2.配置用户名和邮箱
+	git config --global user.name  'MomaYang'
+	git config --global user.email '798336856@qq.com'
 
-2.git add <file>  添加文件
-3.git status         查看状态
-4.git commit         提交
-5.git push           推送到仓库
+3.git add <file>  添加文件到本地仓库
+ git add *.html 把所有后缀为html的文件上传到本地仓库
+ git add .      添加上传所有的文件
+ git rm -- cached index.html  删除上传到本地仓库里的文件
+
+
+4.git status         查看当前状态
+
+5.git commit         提交后备注完按esc 输入:wq 保存
+5.1 git commit -m '备注'  提交与备注
+
+6.git push           推送到远程仓库
 6.git pull           从远程仓库拉取数据
 7.git clone          从远程仓库拷贝数据
 
 
-.gitignore    忽略文件与文件夹
+
 git branch name   创建分支
 git checkout name  切换分支
 
-git checkout master  主分支  master 
+git checkout master  主分支  默认主分支为master 
 
 git merge name 主分支和分支合并，前提是切换到主分支下操作
+
+.gitignore    忽略不想上传的文件与文件夹
 
 
 git clone http://github.com...   拷贝仓库里的项目
 
-git remote      查看当前没有仓库地址
+git remote      查看当前有没有仓库地址
+git remote add origin https://github.com/MomaYang/homework.git 没有地址添加远程仓库地址origin 提示链接成功
+git push -u origin master  链接主分支上
+
+touch README.md  是文档注释
 
 
+git config --global credential.helper store 解决每次git push和pull都要输入密码
 
 github    https://desktop.github.com
